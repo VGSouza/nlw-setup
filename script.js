@@ -9,8 +9,6 @@ function add() {
   const today = new Date().toLocaleDateString("pt-br").slice(0, -5)
   const dayExists = nlwSetup.dayExists(today)
 
-  nlwSetup.dayExists = nlwSetup.dayExists(today)
-
   if (dayExists) {
     alert("Dia já registrado...😅")
     return
